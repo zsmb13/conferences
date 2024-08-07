@@ -18,15 +18,15 @@ layout: none
     "online": true,
     {%- endif %}
     "dateStart": "{{ conference.date_start | date: "%Y-%m-%d" }}",
-    "dateEnd": "{{ conference.date_end | date: "%Y-%m-%d" }}",
-    {%- if conference.cfp.start %}
+    "dateEnd": "{{ conference.date_end | date: "%Y-%m-%d" }}"
+    {%- if conference.cfp.start -%},
     "cfp": {
       "start": "{{ conference.cfp.start | date: "%Y-%m-%d" }}",
       "end": "{{ conference.cfp.end | date: "%Y-%m-%d" }}",
       "site": "{% if conference.cfp.site %}{{ conference.cfp.site }}{% else %}{{ conference.website }}{% endif %}"
     }
-    {%- endif -%}
-    }{% unless forloop.last %}, {% endunless %}
+    {%- endif %}
+  }{% unless forloop.last %}, {% endunless %}
   {%- endif -%}
-{%- endfor -%}
+{%- endfor %}
 ]
