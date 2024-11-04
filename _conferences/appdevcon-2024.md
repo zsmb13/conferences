@@ -1,5 +1,5 @@
 ---
-name: "Appdevcon"
+name: "AppDevCon"
 website: https://appdevcon.nl
 location: Amsterdam, Netherlands
 
