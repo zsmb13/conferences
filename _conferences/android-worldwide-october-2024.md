@@ -3,6 +3,7 @@ name: "Android Worldwide"
 website: https://android-worldwide.com/
 location: Global
 online: true
+status: Canceled
 
 date_start: 2024-10-29
 date_end:   2024-10-29
